@@ -2,9 +2,9 @@ name: test acton
 on: [push]
 jobs:
   check:
-      - uses: actions/checkout@v3
-      - uses: DeterminateSystems/nix-installer-action@main
-      - uses: DeterminateSystems/magic-nix-cache-action@main
-      # - uses: https://github.com/DeterminateSystems/flake-checker-action@main
-      - use: Run `nix build`
-        run: nix build
+    - uses: actions/checkout@v3
+    - uses: DeterminateSystems/nix-installer-action@main
+    - uses: DeterminateSystems/magic-nix-cache-action@main
+    # - uses: https://github.com/DeterminateSystems/flake-checker-action@main
+    - use: Run `nix build`
+      run: nix build
